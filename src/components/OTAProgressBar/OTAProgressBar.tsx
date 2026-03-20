@@ -10,8 +10,8 @@ interface OTAProgressBarProps {
 
 const OTAProgressBar: React.FC<OTAProgressBarProps> = ({ current, total, isDarkMode }) => {
   const fadeAnim = useRef(new Animated.Value(1)).current;
-  const textColor = isDarkMode ? '#8E8E93' : '#6C6C70';
-  const borderColor = isDarkMode ? '#2C2C2E' : '#E5E5EA';
+  const textColor = isDarkMode ? '#AAAAAA' : '#606060';
+  const borderColor = isDarkMode ? '#3F3F3F' : '#E5E5E5';
 
   useEffect(() => {
     fadeAnim.setValue(0);
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 13,
+    fontFamily: 'Inter_400Regular',
   },
 });
 

@@ -30,16 +30,18 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 14,
-    fontWeight: '600',
+    fontFamily: 'Inter_600SemiBold',
     flex: 1,
     marginRight: 8,
   },
   timestamp: {
     fontSize: 11,
+    fontFamily: 'Inter_400Regular',
     marginTop: 2,
   },
   description: {
     fontSize: 13,
+    fontFamily: 'Inter_400Regular',
     marginTop: 6,
     lineHeight: 18,
   },

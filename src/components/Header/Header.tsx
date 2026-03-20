@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
+import { FontAwesome5 } from '@expo/vector-icons';
 import ThemeToggle from './ThemeToggle';
 
 interface HeaderProps {
@@ -9,22 +10,21 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ isDarkMode, onToggleTheme, isUpdating }) => {
-  const textColor = isDarkMode ? '#FFFFFF' : '#000000';
-  const subtextColor = isDarkMode ? '#8E8E93' : '#6C6C70';
+  const textColor = isDarkMode ? '#FFFFFF' : '#0F0F0F';
+  const subtextColor = isDarkMode ? '#AAAAAA' : '#606060';
 
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <View style={styles.titleRow}>
-          <Text style={[styles.title, { color: textColor }]}>
-            Atualização em Andamento
-          </Text>
+          <FontAwesome5 name="youtube" size={22} color="#FF0000" style={styles.ytIcon} />
+          <Text style={[styles.title, { color: textColor }]}>YouTube Studio</Text>
           {isUpdating && (
             <ActivityIndicator size="small" color="#FF0000" style={styles.indicator} />
           )}
         </View>
         <Text style={[styles.subtitle, { color: subtextColor }]}>
-          Status do Painel de Elevador
+          Painel de Elevador · Ao vivo
         </Text>
       </View>
       <ThemeToggle value={isDarkMode} onValueChange={onToggleTheme} />
@@ -48,12 +48,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  ytIcon: {
+    marginRight: 8,
+  },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'Inter_700Bold',
   },
   subtitle: {
     fontSize: 13,
+    fontFamily: 'Inter_400Regular',
     marginTop: 4,
   },
   indicator: {

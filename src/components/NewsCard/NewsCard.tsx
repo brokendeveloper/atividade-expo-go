@@ -9,9 +9,9 @@ interface NewsCardProps {
 }
 
 const NewsCard: React.FC<NewsCardProps> = ({ item, isDarkMode }) => {
-  const cardBg = isDarkMode ? '#1C1C1E' : '#FFFFFF';
-  const textColor = isDarkMode ? '#FFFFFF' : '#000000';
-  const subtextColor = isDarkMode ? '#8E8E93' : '#6C6C70';
+  const cardBg = isDarkMode ? '#212121' : '#F2F2F2';
+  const textColor = isDarkMode ? '#FFFFFF' : '#0F0F0F';
+  const subtextColor = isDarkMode ? '#AAAAAA' : '#606060';
 
   return (
     <View style={[styles.card, { backgroundColor: cardBg }]}>
