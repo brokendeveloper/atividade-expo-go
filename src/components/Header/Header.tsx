@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, onToggleTheme, isUpdating }
             Atualização em Andamento
           </Text>
           {isUpdating && (
-            <ActivityIndicator size="small" color="#0A84FF" style={styles.indicator} />
+            <ActivityIndicator size="small" color="#FF0000" style={styles.indicator} />
           )}
         </View>
         <Text style={[styles.subtitle, { color: subtextColor }]}>

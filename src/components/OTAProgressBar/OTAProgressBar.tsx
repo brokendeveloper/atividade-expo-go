@@ -24,7 +24,7 @@ const OTAProgressBar: React.FC<OTAProgressBarProps> = ({ current, total, isDarkM
 
   return (
     <View style={[styles.container, { borderTopColor: borderColor }]}>
-      <ActivityIndicator size="small" color="#007AFF" />
+      <ActivityIndicator size="small" color="#FF0000" />
       <Animated.Text style={[styles.label, { color: textColor, opacity: fadeAnim }]}>
         {getOTAStatusLabel(current, total)}
       </Animated.Text>

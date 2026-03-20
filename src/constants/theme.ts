@@ -1,21 +1,21 @@
 export const darkTheme = {
-  background: ['#0D0D0D', '#1A1A2E'] as string[],
-  card: '#1C1C1E',
+  background: ['#0F0F0F', '#212121'] as string[],
+  card: '#212121',
   text: '#FFFFFF',
-  subtext: '#8E8E93',
-  accent: '#0A84FF',
-  switchTrack: '#34C759',
-  border: '#2C2C2E',
+  subtext: '#AAAAAA',
+  accent: '#FF0000',
+  switchTrack: '#FF0000',
+  border: '#3F3F3F',
 };
 
 export const lightTheme = {
-  background: ['#F2F2F7', '#FFFFFF'] as string[],
-  card: '#FFFFFF',
-  text: '#000000',
-  subtext: '#6C6C70',
-  accent: '#007AFF',
-  switchTrack: '#34C759',
-  border: '#E5E5EA',
+  background: ['#FFFFFF', '#F9F9F9'] as string[],
+  card: '#F2F2F2',
+  text: '#0F0F0F',
+  subtext: '#606060',
+  accent: '#FF0000',
+  switchTrack: '#FF0000',
+  border: '#E5E5E5',
 };
 
 export type Theme = typeof darkTheme;

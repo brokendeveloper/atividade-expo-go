@@ -13,7 +13,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ value, onValueChange }) => {
       <Switch
         value={value}
         onValueChange={onValueChange}
-        trackColor={{ false: '#767577', true: '#34C759' }}
+        trackColor={{ false: '#767577', true: '#FF0000' }}
         thumbColor={value ? '#FFFFFF' : '#F4F3F4'}
       />
       <Text style={[styles.label, { color: value ? '#FFFFFF' : '#000000' }]}>
