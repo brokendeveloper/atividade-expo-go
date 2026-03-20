@@ -1,3 +1,3 @@
 export function getOTAStatusLabel(current: number, total: number): string {
-  return `Aplicando atualizações OTA... (${current}/${total})`;
+  return `Sincronizando conteúdo com os painéis... (${current}/${total})`;
 }
